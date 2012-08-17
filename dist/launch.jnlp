@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>WebGame</title>
+        <vendor>Raul</vendor>
+        <homepage href=""/>
+        <description>WebGame</description>
+        <description kind="short">WebGame</description>
+    <offline-allowed/>
+</information>
+    <update check="background"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.7+"/>
+        <jar href="WebGame.jar" main="true"/>
+    <jar href="lib/UtilidadesArduino.jar"/>
+</resources>
+    <applet-desc height="400" main-class="com.pfc.ball.StartingPoint" name="WebGame" width="600">
+    </applet-desc>
+</jnlp>
